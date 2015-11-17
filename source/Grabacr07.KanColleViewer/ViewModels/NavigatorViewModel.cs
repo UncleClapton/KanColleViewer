@@ -131,6 +131,11 @@ namespace Grabacr07.KanColleViewer.ViewModels
 			this.RefreshRequested?.Invoke(this, new EventArgs());
 		}
 
+        public void NavigateHome()
+        {
+            this.UriRequested(this, Properties.Settings.Default.KanColleUrl);
+        }
+
 		public void ReNavigate()
 		{
 			this.UriRequested?.Invoke(this, this.Source);

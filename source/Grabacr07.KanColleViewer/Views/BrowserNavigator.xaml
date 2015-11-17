@@ -19,6 +19,7 @@
 			<ColumnDefinition Width="Auto" />
 			<ColumnDefinition Width="Auto" />
 			<ColumnDefinition />
+            <ColumnDefinition Width="Auto" />
 			<ColumnDefinition Width="Auto" />
 		</Grid.ColumnDefinitions>
 
@@ -48,19 +49,32 @@
 			</Viewbox>
 		</metro2:CallMethodButton>
 
-		<metro:PromptTextBox Grid.Column="2"
+        <metro:PromptTextBox Grid.Column="2"
 							 Text="{Binding SourceString, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
 							 Prompt="{Binding Resources.BrowserNavigator_URLPrompt, Source={x:Static models:ResourceService.Current}, Mode=OneWay}"
 							 VerticalAlignment="Center"
 							 VerticalContentAlignment="Center"
 							 Padding="2">
-			<metro:PromptTextBox.InputBindings>
-				<KeyBinding Key="Enter"
+            <metro:PromptTextBox.InputBindings>
+                <KeyBinding Key="Enter"
 							Command="{Binding NavigateCommand}" />
-			</metro:PromptTextBox.InputBindings>
-		</metro:PromptTextBox>
-
-		<metro2:CallMethodButton Grid.Column="3"
+            </metro:PromptTextBox.InputBindings>
+        </metro:PromptTextBox>
+        
+        <metro2:CallMethodButton Grid.Column="3"
+								 MethodName="NavigateHome"
+								 Height="30"
+								 Margin="2,0"
+								 Style="{DynamicResource CircleButtonStyleKey}"
+								 ToolTip="{Binding Resources.BrowserNavigator_Home, Source={x:Static models:ResourceService.Current}, Mode=OneWay}">
+            <Viewbox Margin="5,5,5,6">
+                <Path Data="F1 M 24.0033,56.0078L 24.0033,38.0053L 22.0031,40.0056L 19.0027,35.0049L 38.0053,20.0028L 45.0063,25.5299L 45.0063,21.753L 49.0068,21.0029L 49.0068,28.6882L 57.008,35.0049L 54.0075,40.0056L 52.0073,38.0053L 52.0073,56.0078L 24.0033,56.0078 Z M 38.0053,26.9204L 27.0038,36.005L 27.0038,53.0074L 33.0046,53.0074L 33.0046,42.006L 43.006,42.006L 43.006,53.0074L 49.0068,53.0074L 49.0068,36.005L 38.0053,26.9204 Z "
+                      Stretch="Uniform"
+					  Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}, Path=Foreground}" />
+            </Viewbox>
+        </metro2:CallMethodButton>
+        
+        <metro2:CallMethodButton Grid.Column="4"
 								 MethodName="ReNavigate"
 								 Height="30"
 								 Margin="2,0"
@@ -72,5 +86,6 @@
 					  Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}, Path=Foreground}" />
 			</Viewbox>
 		</metro2:CallMethodButton>
+        
 	</Grid>
 </UserControl>

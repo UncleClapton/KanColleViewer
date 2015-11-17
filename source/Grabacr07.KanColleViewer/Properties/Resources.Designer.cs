@@ -79,6 +79,15 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        public static string BrowserNavigator_Home {
+            get {
+                return ResourceManager.GetString("BrowserNavigator_Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 次のページに進む.
         /// </summary>
         public static string BrowserNavigator_Reload {
