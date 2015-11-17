@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Versions>
+  <Settings>
+    <UpdateRootURL>https://raw.githubusercontent.com/KCV-Localisation/KanColleViewer-Translations/master/</UpdateRootURL>
+  </Settings>
+  <Item>
+    <Name>App</Name>
+    <Version>3.8.5.5</Version>
+    <URL>https://github.com/UncleClapton/KanColleViewer/releases/tag/v3.8.5r5</URL>
+  </Item>
+</Versions>
+
