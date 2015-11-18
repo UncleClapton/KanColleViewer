@@ -1397,4 +1397,7 @@ HTTP プロトコルの通信は自動構成も含め「インターネット �
   <data name="ViewRangeLogic_Type3_Name" xml:space="preserve">
     <value>2-5 式 (秋)</value>
   </data>
+  <data name="BrowserNavigator_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
 </root>

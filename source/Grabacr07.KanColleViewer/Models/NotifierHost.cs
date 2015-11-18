@@ -99,7 +99,7 @@ namespace Grabacr07.KanColleViewer.Models
 				.AddTo(this);
 
 			client.Updater.UpdateAvailable += this.HandleUpdateAvailable;
-			client.Updater.SendUpdateNotificationIfNeeded();
+			//client.Updater.SendUpdateNotificationIfNeeded();
 
 			this.isRegistered = true;
 		}

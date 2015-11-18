@@ -278,14 +278,14 @@ namespace Grabacr07.KanColleWrapper
 		{
 			versions = new Dictionary<TranslationProviderType, string>();
 			apiAvailable = this.LoadVersions(apiVersionCheckUrl);
-			this.SendUpdateNotificationIfNeeded();
+			//this.SendUpdateNotificationIfNeeded();
 		}
 
 		/// <summary>
 		/// Sends a notification if a new version of the application is available.
 		/// </summary>
 		public void SendUpdateNotificationIfNeeded()
-		{
+        {
 			if (this.apiAvailable && !this.IsUpToDate(TranslationProviderType.App))
 				this.UpdateAvailable?.Invoke(this, new UpdateAvailableEventArgs(versions[TranslationProviderType.App]));
 		}
