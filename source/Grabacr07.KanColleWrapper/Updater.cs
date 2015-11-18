@@ -23,9 +23,9 @@ namespace Grabacr07.KanColleWrapper
 		/// <summary>
 		/// Whether automatic updates are enabled.
 		/// </summary>
-		private static bool EnableUpdates => KanColleClient.Current?.Settings?.EnableUpdates ?? false;
+		private static bool EnableUpdates =/*> KanColleClient.Current?.Settings?.EnableUpdates ??*/ false;
 
-		private static bool EnableSubmissions => KanColleClient.Current?.Settings?.EnableAutosubmission ?? false;
+		private static bool EnableSubmissions =/*> KanColleClient.Current?.Settings?.EnableAutosubmission ??*/ false;
 
 		/// <summary>
 		/// Currently selected culture.
