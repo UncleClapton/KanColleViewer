@@ -23,9 +23,9 @@ namespace Grabacr07.KanColleWrapper
 		/// <summary>
 		/// Whether automatic updates are enabled.
 		/// </summary>
-		private static bool EnableUpdates =/*> KanColleClient.Current?.Settings?.EnableUpdates ??*/ false;
+		private static bool EnableUpdates => KanColleClient.Current?.Settings?.EnableUpdates ?? false;
 
-		private static bool EnableSubmissions =/*> KanColleClient.Current?.Settings?.EnableAutosubmission ??*/ false;
+		private static bool EnableSubmissions => KanColleClient.Current?.Settings?.EnableAutosubmission ?? false;
 
 		/// <summary>
 		/// Currently selected culture.
@@ -278,14 +278,14 @@ namespace Grabacr07.KanColleWrapper
 		{
 			versions = new Dictionary<TranslationProviderType, string>();
 			apiAvailable = this.LoadVersions(apiVersionCheckUrl);
-			this.SendUpdateNotificationIfNeeded();
+			//this.SendUpdateNotificationIfNeeded();
 		}
 
 		/// <summary>
 		/// Sends a notification if a new version of the application is available.
 		/// </summary>
 		public void SendUpdateNotificationIfNeeded()
-		{
+        {
 			if (this.apiAvailable && !this.IsUpToDate(TranslationProviderType.App))
 				this.UpdateAvailable?.Invoke(this, new UpdateAvailableEventArgs(versions[TranslationProviderType.App]));
 		}
