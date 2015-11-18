@@ -21,7 +21,7 @@ namespace Grabacr07.KanColleWrapper.Models
 
 		public string Comment
 		{
-			get { return this._Comment; }
+			get { return this._Comment != "" ? this._Comment : null; }
 			set
 			{
 				if (this._Comment != value)
@@ -80,10 +80,12 @@ namespace Grabacr07.KanColleWrapper.Models
 			}
 		}
 
-		/// <summary>
-		/// 司令部に所属できる艦娘の最大値を取得します。
-		/// </summary>
-		public int MaxShipCount => this.RawData.api_max_chara;
+        public int MaxMaterialCount => 250 * (this.RawData.api_level + 3);
+
+        /// <summary>
+        /// 司令部に所属できる艦娘の最大値を取得します。
+        /// </summary>
+        public int MaxShipCount => this.RawData.api_max_chara;
 
 		/// <summary>
 		/// 司令部が保有できる装備アイテムの最大値を取得します。
