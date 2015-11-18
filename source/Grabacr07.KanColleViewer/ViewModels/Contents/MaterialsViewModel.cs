@@ -1,16 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Grabacr07.KanColleViewer.Properties;
+﻿using Clapton.Extensions;
 using Grabacr07.KanColleViewer.Models.Settings;
+using Grabacr07.KanColleViewer.Properties;
 using Grabacr07.KanColleWrapper;
 using Livet;
 using MetroTrilithon.Mvvm;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Grabacr07.KanColleViewer.ViewModels.Contents
 {
-	public class MaterialsViewModel : ViewModel
+    public class MaterialsViewModel : ViewModel
 	{
 		public Materials Model { get; }
 
