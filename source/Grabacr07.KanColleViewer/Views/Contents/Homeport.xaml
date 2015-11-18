@@ -39,12 +39,10 @@
 			<TextBlock>
 				<Run Text="{Binding Model.Nickname, Mode=OneWay}"
 					 Style="{DynamicResource EmphaticTextElementStyleKey}"
+                     ToolTip="{Binding Model.Comment, Mode=OneWay}"
 					 FontSize="18" />
-				<Run Text="{Binding Model.RankId, Mode=OneWay, Converter={StaticResource AdmiralRankToStringConverter}}"
-					 Style="{DynamicResource EmphaticTextElementStyleKey}"
-					 FontSize="14" />
-				<LineBreak />
-				<Run Text="{Binding Model.Comment, Mode=OneWay}" />
+                <LineBreak />
+				<Run Text="{Binding Model.RankId, Mode=OneWay, Converter={StaticResource AdmiralRankToStringConverter}}" />
 			</TextBlock>
 
 			<TextBlock>
