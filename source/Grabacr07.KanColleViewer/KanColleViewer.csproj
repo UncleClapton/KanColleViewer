@@ -563,6 +563,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Clapton\ClaptonUtils\ClaptonUtils.csproj">
+      <Project>{40a3b415-97ae-4b6a-b527-b8be23ec50b5}</Project>
+      <Name>ClaptonUtils</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Grabacr07.KanColleViewer.Composition\KanColleViewer.Composition.csproj">
       <Project>{cc139e98-d847-41da-b20f-8aca4564f375}</Project>
       <Name>KanColleViewer.Composition</Name>
