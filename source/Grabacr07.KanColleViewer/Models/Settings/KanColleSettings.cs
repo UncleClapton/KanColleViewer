@@ -75,7 +75,13 @@ namespace Grabacr07.KanColleViewer.Models.Settings
 		public static SerializableProperty<string> DisplayMaterial2 { get; }
 			= new SerializableProperty<string>(GetKey(), Providers.Roaming, nameof(Materials.InstantBuildMaterials));
 
-		public static SerializableProperty<bool> EnableTranslations { get; }
+        public static SerializableProperty<string> DisplayMaterial3 { get; }
+            = new SerializableProperty<string>(GetKey(), Providers.Roaming, nameof(Materials.ImprovementMaterials));
+
+        public static SerializableProperty<string> DisplayMaterial4 { get; }
+            = new SerializableProperty<string>(GetKey(), Providers.Roaming, nameof(Materials.DevelopmentMaterials));
+
+        public static SerializableProperty<bool> EnableTranslations { get; }
 			= new SerializableProperty<bool>(GetKey(), Providers.Roaming, true);
 
 		public static SerializableProperty<bool> EnableUpdates { get; }

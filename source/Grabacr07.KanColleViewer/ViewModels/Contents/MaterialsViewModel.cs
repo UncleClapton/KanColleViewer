@@ -54,9 +54,49 @@ namespace Grabacr07.KanColleViewer.ViewModels.Contents
 			}
 		}
 
-		#endregion
+        #endregion
 
-		public MaterialsViewModel()
+        #region SelectedItem3 変更通知プロパティ
+
+        private MaterialViewModel _SelectedItem3;
+
+        public MaterialViewModel SelectedItem3
+        {
+            get { return this._SelectedItem3; }
+            set
+            {
+                if (this._SelectedItem3 != value)
+                {
+                    this._SelectedItem3 = value;
+                    this.RaisePropertyChanged();
+                    KanColleSettings.DisplayMaterial3.Value = value?.Key;
+                }
+            }
+        }
+
+        #endregion
+
+        #region SelectedItem4 変更通知プロパティ
+
+        private MaterialViewModel _SelectedItem4;
+
+        public MaterialViewModel SelectedItem4
+        {
+            get { return this._SelectedItem4; }
+            set
+            {
+                if (this._SelectedItem4 != value)
+                {
+                    this._SelectedItem4 = value;
+                    this.RaisePropertyChanged();
+                    KanColleSettings.DisplayMaterial4.Value = value?.Key;
+                }
+            }
+        }
+
+        #endregion
+
+        public MaterialsViewModel()
 		{
 			this.Model = KanColleClient.Current.Homeport.Materials;
 
