@@ -165,10 +165,10 @@ namespace Grabacr07.KanColleViewer.ViewModels.Contents
 				improvement,
 			};
 
-			this._SelectedItem1 = this.Values.FirstOrDefault(x => x.Key == KanColleSettings.DisplayMaterial1) ?? repair;
-			this._SelectedItem2 = this.Values.FirstOrDefault(x => x.Key == KanColleSettings.DisplayMaterial2) ?? build;
-            this._SelectedItem2 = this.Values.FirstOrDefault(x => x.Key == KanColleSettings.DisplayMaterial3) ?? develop;
-            this._SelectedItem2 = this.Values.FirstOrDefault(x => x.Key == KanColleSettings.DisplayMaterial4) ?? improvement;
+			this._SelectedItem1 = this.Values.FirstOrDefault(x => x.Key == KanColleSettings.DisplayMaterial1) ?? fuel;
+			this._SelectedItem2 = this.Values.FirstOrDefault(x => x.Key == KanColleSettings.DisplayMaterial2) ?? ammunition;
+            this._SelectedItem3 = this.Values.FirstOrDefault(x => x.Key == KanColleSettings.DisplayMaterial3) ?? steel;
+            this._SelectedItem4 = this.Values.FirstOrDefault(x => x.Key == KanColleSettings.DisplayMaterial4) ?? bauxite;
         }
 
         #region GetMaterialRegenStopTime

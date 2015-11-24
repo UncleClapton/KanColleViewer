@@ -1,24 +1,23 @@
-﻿using System;
+﻿using Grabacr07.KanColleWrapper.Models.Raw;
+using Grabacr07.KanColleWrapper.Models.Translations;
+using Grabacr07.KanColleWrapper.Models.Updater;
+using Livet;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Windows.Threading;
-using Grabacr07.KanColleWrapper.Models.Raw;
-using Grabacr07.KanColleWrapper.Models.Translations;
-using Grabacr07.KanColleWrapper.Models.Updater;
-using Livet;
-using Newtonsoft.Json;
 
 namespace Grabacr07.KanColleWrapper
 {
-	public class Updater : NotificationObject
+    public class Updater : NotificationObject
 	{
 		/// <summary>
 		/// Whether automatic updates are enabled.

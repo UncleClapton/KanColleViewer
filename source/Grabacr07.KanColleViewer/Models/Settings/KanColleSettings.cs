@@ -67,19 +67,26 @@ namespace Grabacr07.KanColleViewer.Models.Settings
 		/// 画面に表示する資材 (1 つめ) を表す設定値を取得します。
 		/// </summary>
 		public static SerializableProperty<string> DisplayMaterial1 { get; }
-			= new SerializableProperty<string>(GetKey(), Providers.Roaming, nameof(Materials.InstantRepairMaterials));
+			= new SerializableProperty<string>(GetKey(), Providers.Roaming, nameof(Materials.Fuel));
 
 		/// <summary>
 		/// 画面に表示する資材 (2 つめ) を表す設定値を取得します。
 		/// </summary>
 		public static SerializableProperty<string> DisplayMaterial2 { get; }
-			= new SerializableProperty<string>(GetKey(), Providers.Roaming, nameof(Materials.InstantBuildMaterials));
+			= new SerializableProperty<string>(GetKey(), Providers.Roaming, nameof(Materials.Ammunition));
 
+        /// <summary>
+        /// 画面に表示する資材 (3 つめ) を表す設定値を取得します。
+        /// </summary>
         public static SerializableProperty<string> DisplayMaterial3 { get; }
-            = new SerializableProperty<string>(GetKey(), Providers.Roaming, nameof(Materials.ImprovementMaterials));
+            = new SerializableProperty<string>(GetKey(), Providers.Roaming, nameof(Materials.Steel));
 
+        /// <summary>
+        /// 画面に表示する資材 (4 つめ) を表す設定値を取得します。
+        /// </summary>
         public static SerializableProperty<string> DisplayMaterial4 { get; }
-            = new SerializableProperty<string>(GetKey(), Providers.Roaming, nameof(Materials.DevelopmentMaterials));
+            = new SerializableProperty<string>(GetKey(), Providers.Roaming, nameof(Materials.Bauxite));
+
 
         public static SerializableProperty<bool> EnableTranslations { get; }
 			= new SerializableProperty<bool>(GetKey(), Providers.Roaming, true);
