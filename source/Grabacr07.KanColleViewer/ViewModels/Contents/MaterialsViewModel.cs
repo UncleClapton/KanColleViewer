@@ -188,14 +188,14 @@ namespace Grabacr07.KanColleViewer.ViewModels.Contents
         public TimeSpan GetMaterialRegenTimeRemaining(string type)
         {
             int MaterialCap = KanColleClient.Current.Homeport.Admiral.MaxMaterialCount;
-            if (!this.GetType().HasProperty(type))
+            if (!Model.GetType().HasProperty(type))
                 return new TimeSpan(0, 0, 0);
             else if (!new string[] { nameof(Materials.Fuel), nameof(Materials.Ammunition), nameof(Materials.Steel), nameof(Materials.Bauxite) }.Contains(type))
                 return new TimeSpan(0, 0, 0);
             else if ((int)Model.GetPropertyValue(type) >= MaterialCap)
                 return new TimeSpan(0, 0, 0);
             else
-                return nameof(Materials.Bauxite).Equals(type) ? new TimeSpan(0, (MaterialCap - (int)this.GetPropertyValue(type)) * 3, 0) : new TimeSpan(0, MaterialCap - (int)this.GetPropertyValue(type), 0);
+                return nameof(Materials.Bauxite).Equals(type) ? new TimeSpan(0, (MaterialCap - (int)Model.GetPropertyValue(type)) * 3, 0) : new TimeSpan(0, MaterialCap - (int)Model.GetPropertyValue(type), 0);
         }
         #endregion
 
