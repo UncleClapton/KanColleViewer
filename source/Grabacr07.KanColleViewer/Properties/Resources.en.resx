@@ -1393,4 +1393,61 @@ Small Radar LoS × (1.00) + Large Radar LoS × (0.99) +
   <data name="ViewRangeLogic_Type3_Name" xml:space="preserve">
     <value>2-5 formula (new)</value>
   </data>
+  <data name="Common_Minimum" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="Settings_Operation_CheckFlagshipIsNotRepairShip" xml:space="preserve">
+    <value>Check that the flagship is not a repair ship</value>
+  </data>
+  <data name="Settings_Operation_AutomaticFleetSelection" xml:space="preserve">
+    <value>Automatically select fleets</value>
+  </data>
+  <data name="Settings_Operation_AutomaticFleetSelection_OnOrganisation" xml:space="preserve">
+    <value>When fleet composition is changed</value>
+  </data>
+  <data name="Settings_Operation_AutomaticFleetSelection_OnSortie" xml:space="preserve">
+    <value>When a fleet sorties</value>
+  </data>
+  <data name="Settings_Window_Taskbar" xml:space="preserve">
+    <value>Taskbar Button Settings</value>
+  </data>
+  <data name="Settings_Window_Taskbar_IndicatorBehaviour" xml:space="preserve">
+    <value>Indicator behaviour</value>
+  </data>
+  <data name="Settings_Window_Taskbar_IndicatorBehaviour_OnSortie" xml:space="preserve">
+    <value>Indicator behaviour during sortie</value>
+  </data>
+  <data name="TaskbarIndicator_DoNotUse" xml:space="preserve">
+    <value>Disable</value>
+  </data>
+  <data name="ShipCatalog_Column_TTR" xml:space="preserve">
+    <value>Repairs</value>
+  </data>
+  <data name="ShipCatalog_Column_TTR_ToolTip" xml:space="preserve">
+    <value>Time until the repairs finish.</value>
+  </data>
+  <data name="ShipCatalog_Filter_Misc_Damage" xml:space="preserve">
+    <value>Damage</value>
+  </data>
+  <data name="ShipCatalog_Filter_Misc_DamageNo" xml:space="preserve">
+    <value>Not damaged</value>
+  </data>
+  <data name="ShipCatalog_Filter_Misc_DamageYes" xml:space="preserve">
+    <value>Damaged</value>
+  </data>
+  <data name="Common_Maximum" xml:space="preserve">
+    <value>max</value>
+  </data>
+  <data name="FleetWindow_AirSuperiority_Max_ToolTip" xml:space="preserve">
+    <value>Maximum skill level for all aircraft.</value>
+  </data>
+  <data name="FleetWindow_AirSuperiority_Min_ToolTip" xml:space="preserve">
+    <value>Minimum skill level; AS is only calculated for carrier-based aircraft.</value>
+  </data>
+  <data name="FleetWindow_Status_Organisation_AR_Flagship" xml:space="preserve">
+    <value>Flagship is a repair ship</value>
+  </data>
+  <data name="FleetWindow_Status_Organisation_Normal" xml:space="preserve">
+    <value>Fleet composition OK</value>
+  </data>
 </root>

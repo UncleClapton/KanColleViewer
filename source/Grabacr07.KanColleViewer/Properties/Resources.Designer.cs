@@ -142,6 +142,24 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 最大.
+        /// </summary>
+        public static string Common_Maximum {
+            get {
+                return ResourceManager.GetString("Common_Maximum", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 最小.
+        /// </summary>
+        public static string Common_Minimum {
+            get {
+                return ResourceManager.GetString("Common_Minimum", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 通知しない.
         /// </summary>
         public static string Common_Notifications_Disable {
@@ -610,6 +628,24 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 全艦載機で、内部熟練度を最大として計算しています。.
+        /// </summary>
+        public static string FleetWindow_AirSuperiority_Max_ToolTip {
+            get {
+                return ResourceManager.GetString("FleetWindow_AirSuperiority_Max_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 艦戦のみで、内部熟練度を最小として計算しています。.
+        /// </summary>
+        public static string FleetWindow_AirSuperiority_Min_ToolTip {
+            get {
+                return ResourceManager.GetString("FleetWindow_AirSuperiority_Min_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 平均レベル.
         /// </summary>
         public static string FleetWindow_LevelAverage {
@@ -741,6 +777,24 @@ namespace Grabacr07.KanColleViewer.Properties {
         public static string FleetWindow_Status_NotSortied {
             get {
                 return ResourceManager.GetString("FleetWindow_Status_NotSortied", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 工作艦が旗艦として編成されています.
+        /// </summary>
+        public static string FleetWindow_Status_Organisation_AR_Flagship {
+            get {
+                return ResourceManager.GetString("FleetWindow_Status_Organisation_AR_Flagship", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 艦隊編成は正常です.
+        /// </summary>
+        public static string FleetWindow_Status_Organisation_Normal {
+            get {
+                return ResourceManager.GetString("FleetWindow_Status_Organisation_Normal", resourceCulture);
             }
         }
         
@@ -1853,6 +1907,42 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 艦隊自動選択.
+        /// </summary>
+        public static string Settings_Operation_AutomaticFleetSelection {
+            get {
+                return ResourceManager.GetString("Settings_Operation_AutomaticFleetSelection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 艦隊の編成を変更したとき、その艦隊を自動的に選択する.
+        /// </summary>
+        public static string Settings_Operation_AutomaticFleetSelection_OnOrganisation {
+            get {
+                return ResourceManager.GetString("Settings_Operation_AutomaticFleetSelection_OnOrganisation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 艦隊が出撃したとき、その艦隊を自動的に選択する.
+        /// </summary>
+        public static string Settings_Operation_AutomaticFleetSelection_OnSortie {
+            get {
+                return ResourceManager.GetString("Settings_Operation_AutomaticFleetSelection_OnSortie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 旗艦に工作艦が編成されているときは出撃可能と判断しない.
+        /// </summary>
+        public static string Settings_Operation_CheckFlagshipIsNotRepairShip {
+            get {
+                return ResourceManager.GetString("Settings_Operation_CheckFlagshipIsNotRepairShip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 艦上偵察機.
         /// </summary>
         public static string Settings_Operation_LoS_CarrierBasedRecon {
@@ -2483,6 +2573,33 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to タスク バー設定.
+        /// </summary>
+        public static string Settings_Window_Taskbar {
+            get {
+                return ResourceManager.GetString("Settings_Window_Taskbar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to インジケーターの動作.
+        /// </summary>
+        public static string Settings_Window_Taskbar_IndicatorBehaviour {
+            get {
+                return ResourceManager.GetString("Settings_Window_Taskbar_IndicatorBehaviour", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to インジケーターの動作 (出撃中).
+        /// </summary>
+        public static string Settings_Window_Taskbar_IndicatorBehaviour_OnSortie {
+            get {
+                return ResourceManager.GetString("Settings_Window_Taskbar_IndicatorBehaviour_OnSortie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ウィンドウを常に最前面に表示する.
         /// </summary>
         public static string Settings_Window_TopMost {
@@ -2762,6 +2879,24 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 修復時間.
+        /// </summary>
+        public static string ShipCatalog_Column_TTR {
+            get {
+                return ResourceManager.GetString("ShipCatalog_Column_TTR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 入渠にかかる時間です.
+        /// </summary>
+        public static string ShipCatalog_Column_TTR_ToolTip {
+            get {
+                return ResourceManager.GetString("ShipCatalog_Column_TTR_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 索敵.
         /// </summary>
         public static string ShipCatalog_Column_ViewRange {
@@ -2875,6 +3010,33 @@ namespace Grabacr07.KanColleViewer.Properties {
         public static string ShipCatalog_Filter_Misc_All {
             get {
                 return ResourceManager.GetString("ShipCatalog_Filter_Misc_All", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 損傷.
+        /// </summary>
+        public static string ShipCatalog_Filter_Misc_Damage {
+            get {
+                return ResourceManager.GetString("ShipCatalog_Filter_Misc_Damage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 損傷なし.
+        /// </summary>
+        public static string ShipCatalog_Filter_Misc_DamageNo {
+            get {
+                return ResourceManager.GetString("ShipCatalog_Filter_Misc_DamageNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 損傷あり.
+        /// </summary>
+        public static string ShipCatalog_Filter_Misc_DamageYes {
+            get {
+                return ResourceManager.GetString("ShipCatalog_Filter_Misc_DamageYes", resourceCulture);
             }
         }
         
@@ -3721,6 +3883,15 @@ namespace Grabacr07.KanColleViewer.Properties {
         public static string System_Flash_Not_Installed_Text {
             get {
                 return ResourceManager.GetString("System_Flash_Not_Installed_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 使用しない.
+        /// </summary>
+        public static string TaskbarIndicator_DoNotUse {
+            get {
+                return ResourceManager.GetString("TaskbarIndicator_DoNotUse", resourceCulture);
             }
         }
         
